@@ -14,6 +14,7 @@ function isNumber(item) {
  *   operation:String  +, -, etc.
  */
 export default function calculate(obj, buttonName) {
+
   if (buttonName === 'AC') {
     return {
       total: null,
@@ -23,9 +24,7 @@ export default function calculate(obj, buttonName) {
   }
 
   if (isNumber(buttonName)) {
-    if (buttonName === '0' && obj.next === '0') {
-      return {};
-    }
+    if (buttonName === '0' && obj.next === '0') return {};
     // If there is an operation, update next
     if (obj.operation) {
       if (obj.next && obj.next !== '0') {
@@ -86,8 +85,6 @@ export default function calculate(obj, buttonName) {
     }
     return {};
   }
-
-  // Button must be an operation
 
   // When the user presses an operation button without having entered
   // a number first, do nothing.
