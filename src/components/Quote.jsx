@@ -1,3 +1,4 @@
+import React from 'react';
 const image = require('../images/math-brain.png');
 
 function Quote() {

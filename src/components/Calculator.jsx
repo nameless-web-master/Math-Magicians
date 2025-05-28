@@ -12,6 +12,12 @@ const Calculator = () => {
     setState(result);
   };
 
+  const handleTextChange = (e) => {
+    setState({
+      total: e.target.value,
+    });
+  };
+
   return (
     <div className="calculator-app">
       <h2>Let&apos;s do some math!</h2>
