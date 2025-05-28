@@ -22,6 +22,14 @@ describe('calculate', () => {
     expect(result.total).toBe('2');
   });
 
+  test('6 + 3 should be 9', () => {
+    result = calculate(result, '6');
+    result = calculate(result, '+');
+    result = calculate(result, '3');
+    result = calculate(result, '=');
+    expect(result.total).toBe('9');
+  });
+
   test('8 / 2 should be equale to 4', () => {
     result = calculate(result, '8');
     result = calculate(result, '÷');

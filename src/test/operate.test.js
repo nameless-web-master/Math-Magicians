@@ -1,8 +1,8 @@
 import operate from './__mocks__/operate';
 
 describe('operate', () => {
-  test('1 + 2 should return 3', () => {
-    expect(operate('1', '2', '+')).toBe('3');
+  test('5 + 2 should return 3', () => {
+    expect(operate('5', '2', '+')).toBe('7');
   });
 
   test('1 - 2 should return -1', () => {
